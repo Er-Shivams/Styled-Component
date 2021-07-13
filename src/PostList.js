@@ -15,7 +15,7 @@ class PostList extends Component {
     axios.get('https://api.shrtco.de/v2/shorten?url=example.org/very/long/link.html')
     .then(response => {
         this.setState({posts: response.data})
-        // console.log(response)
+        console.log(response)
     })
 
     .catch(error => {
